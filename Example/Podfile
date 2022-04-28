@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Hi-Kit-Module_Example' do
+  pod 'Hi-Kit-Module', :path => '../'
+
+  target 'Hi-Kit-Module_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
