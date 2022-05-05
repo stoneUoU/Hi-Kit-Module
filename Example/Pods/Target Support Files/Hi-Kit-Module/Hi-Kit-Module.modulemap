@@ -1,0 +1,6 @@
+framework module Hi_Kit_Module {
+  umbrella header "Hi-Kit-Module-umbrella.h"
+
+  export *
+  module * { export * }
+}

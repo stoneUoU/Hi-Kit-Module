@@ -1,0 +1,16 @@
+PODS:
+  - Hi-Kit-Module (0.1.0)
+
+DEPENDENCIES:
+  - Hi-Kit-Module (from `../`)
+
+EXTERNAL SOURCES:
+  Hi-Kit-Module:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Hi-Kit-Module: 6b3d6418fdb168c590d59d1b2469ef6a8a9ec2fa
+
+PODFILE CHECKSUM: 591e3e665cea22b979f96ddfdf1badfe232dd668
+
+COCOAPODS: 1.10.0

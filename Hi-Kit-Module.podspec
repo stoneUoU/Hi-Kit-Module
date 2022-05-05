@@ -30,7 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Hi-Kit-Module/Classes/**/*'
+  s.source_files = 'Hi-Kit-Module/**/*'
+  
+  s.dependency 'Hi-Helper-Module'
   
   # s.resource_bundles = {
   #   'Hi-Kit-Module' => ['Hi-Kit-Module/Assets/*.png']
