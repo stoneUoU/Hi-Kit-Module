@@ -8,6 +8,7 @@
 import UIKit
 import CoreImage
 import CoreGraphics
+import Hi_Helper_Module
 
 /// 像素，每个像素包含红，蓝，绿，透明度
 public struct CWPixel {
@@ -286,5 +287,11 @@ extension UIImage {
             UIGraphicsEndImageContext();
         }
         return resultImage
+    }
+}
+
+extension UIImage {
+    open class func hi_image(named name: String,moduled module: String) -> UIImage {
+        return HiAssetsHelper.bundledImage(named: name,moduled:module);
     }
 }

@@ -7,13 +7,13 @@
 
 import UIKit
 
-class HiView: NSObject {
+open class HiView: NSObject {
     
     //MARK:- 绘制虚线
     /**
      * 绘制虚线
      */
-    class func drawLine(imageView: UIImageView, withDashColor dashColor: UIColor) {
+    public class func drawLine(imageView: UIImageView, withDashColor dashColor: UIColor) {
         //  Converted to Swift 5.5 by Swiftify v5.5.22923 - https://swiftify.com/
         UIGraphicsBeginImageContext(imageView.frame.size) //开始画线 划线的frame
         imageView.image?.draw(in: CGRect(x: 0, y: 0, width: imageView.frame.size.width, height: imageView.frame.size.height))

@@ -7,9 +7,9 @@
 
 import UIKit
 
-class HiFont: NSObject {
+open class HiFont: NSObject {
     
-    static func regular(size:Float) -> UIFont {
+    public static func regular(size:Float) -> UIFont {
         let font = UIFont(name: "PingFangSC-Regular", size: CGFloat(size))
         if (font != nil) {
             return font!;
@@ -17,7 +17,7 @@ class HiFont: NSObject {
         return self.defaultFont(size:size);
     }
     
-    static func bold(size:Float) -> UIFont {
+    public static func bold(size:Float) -> UIFont {
         let font = UIFont(name: "PingFangSC-Semibold", size: CGFloat(size))
         if (font != nil) {
             return font!;
@@ -25,7 +25,7 @@ class HiFont: NSObject {
         return self.defaultFont(size:size);
     }
     
-    static func light(size:Float) -> UIFont {
+    public static func light(size:Float) -> UIFont {
         let font = UIFont(name: "PingFangSC-Light", size: CGFloat(size))
         if (font != nil) {
             return font!;
@@ -33,7 +33,7 @@ class HiFont: NSObject {
         return self.defaultFont(size:size);
     }
     
-    static func medium(size:Float) -> UIFont {
+    public static func medium(size:Float) -> UIFont {
         let font = UIFont(name: "PingFangSC-Medium", size: CGFloat(size))
         if (font != nil) {
             return font!;
@@ -41,7 +41,7 @@ class HiFont: NSObject {
         return self.defaultFont(size:size);
     }
     
-    static func defaultFont(size:Float) -> UIFont {
+    public static func defaultFont(size:Float) -> UIFont {
         
         return UIFont.systemFont(ofSize: CGFloat(size));
     }
