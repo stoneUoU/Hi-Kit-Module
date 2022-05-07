@@ -1,0 +1,6 @@
+framework module Hi_Helper_Module {
+  umbrella header "Hi-Helper-Module-umbrella.h"
+
+  export *
+  module * { export * }
+}

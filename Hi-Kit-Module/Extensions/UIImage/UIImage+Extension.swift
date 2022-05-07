@@ -290,8 +290,8 @@ extension UIImage {
     }
 }
 
-extension UIImage {
-    open class func hi_image(named name: String,moduled module: String) -> UIImage {
+@objc extension UIImage {
+    @objc open class func hi_image(named name: String,moduled module: String) -> UIImage {
         return HiAssetsHelper.bundledImage(named: name,moduled:module);
     }
 }

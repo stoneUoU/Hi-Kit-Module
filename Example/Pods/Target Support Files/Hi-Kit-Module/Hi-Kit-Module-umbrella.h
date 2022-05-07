@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "HiRefreshFooter.h"
+#import "HiRefreshHeader.h"
 
 FOUNDATION_EXPORT double Hi_Kit_ModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char Hi_Kit_ModuleVersionString[];

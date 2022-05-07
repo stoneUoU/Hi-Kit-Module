@@ -40,7 +40,9 @@ TODO: Add long description of the pod here.
   
   s.dependency 'Hi-Router-Module'
   s.dependency 'Hi-Helper-Module'
+  
   s.dependency 'SnapKit'
+  s.dependency 'MJRefresh'
   s.dependency 'Kingfisher'
   
   # s.resource_bundles = {

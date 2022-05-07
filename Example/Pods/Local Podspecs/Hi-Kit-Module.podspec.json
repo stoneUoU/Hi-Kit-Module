@@ -18,5 +18,27 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Hi-Kit-Module/Classes/**/*"
+  "source_files": "Hi-Kit-Module/**/*.{h,m,swift}",
+  "resource_bundles": {
+    "Hi-Kit-Module": [
+      "Hi-Kit-Module/Resource/HiKitModule.xcassets"
+    ]
+  },
+  "dependencies": {
+    "Hi-Router-Module": [
+
+    ],
+    "Hi-Helper-Module": [
+
+    ],
+    "SnapKit": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "Kingfisher": [
+
+    ]
+  }
 }

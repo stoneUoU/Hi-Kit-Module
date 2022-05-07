@@ -1,16 +1,48 @@
 PODS:
-  - Hi-Kit-Module (0.1.0)
+  - Hi-Helper-Module (0.1.0):
+    - Hi-Router-Module
+    - MBProgressHUD
+  - Hi-Kit-Module (0.1.0):
+    - Hi-Helper-Module
+    - Hi-Router-Module
+    - Kingfisher
+    - MJRefresh
+    - SnapKit
+  - Hi-Router-Module (0.1.0)
+  - Kingfisher (4.10.1)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.5)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - Hi-Helper-Module (from `../../Hi-Helper-Module`)
   - Hi-Kit-Module (from `../`)
+  - Hi-Router-Module (from `../../Hi-Router-Module`)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - MBProgressHUD
+    - MJRefresh
+    - SnapKit
 
 EXTERNAL SOURCES:
+  Hi-Helper-Module:
+    :path: "../../Hi-Helper-Module"
   Hi-Kit-Module:
     :path: "../"
+  Hi-Router-Module:
+    :path: "../../Hi-Router-Module"
 
 SPEC CHECKSUMS:
-  Hi-Kit-Module: 6b3d6418fdb168c590d59d1b2469ef6a8a9ec2fa
+  Hi-Helper-Module: 4314df10a30324d122eaa253784b5240741fc9e1
+  Hi-Kit-Module: 597b002eccac2817ea02778e0e3d4b13d658e307
+  Hi-Router-Module: 13474c2e498b7fc64919328109943169ed7ea482
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 591e3e665cea22b979f96ddfdf1badfe232dd668
+PODFILE CHECKSUM: e83184dfacd7551a7b08b185eafe51e09cab7f1e
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

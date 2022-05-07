@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		04849B0F438A0A248814ACD6 /* Pods-Hi-Kit-Module_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-Kit-Module_Example.debug.xcconfig"; path = "Target Support Files/Pods-Hi-Kit-Module_Example/Pods-Hi-Kit-Module_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0E8D2AB301618AC233BEC087 /* Pods-Hi-Kit-Module_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-Kit-Module_Tests.release.xcconfig"; path = "Target Support Files/Pods-Hi-Kit-Module_Tests/Pods-Hi-Kit-Module_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1C4F3393C71FF453284B9789 /* Hi-Kit-Module.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "Hi-Kit-Module.podspec"; path = "../Hi-Kit-Module.podspec"; sourceTree = "<group>"; };
+		1C4F3393C71FF453284B9789 /* Hi-Kit-Module.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Hi-Kit-Module.podspec"; path = "../Hi-Kit-Module.podspec"; sourceTree = "<group>"; };
 		4F385872A1A3BA959EC68D6F /* Pods-Hi-Kit-Module_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-Kit-Module_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Hi-Kit-Module_Tests/Pods-Hi-Kit-Module_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		51847E3172EB3E385A6F5DEF /* Pods-Hi-Kit-Module_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-Kit-Module_Example.release.xcconfig"; path = "Target Support Files/Pods-Hi-Kit-Module_Example/Pods-Hi-Kit-Module_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Hi-Kit-Module_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hi-Kit-Module_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +43,10 @@
 		607FACE51AFB9204008FA782 /* Hi-Kit-Module_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hi-Kit-Module_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		89054AB9B7D5037600091876 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		89054AB9B7D5037600091876 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C1B39B05F4EF68A2608BF141 /* Pods_Hi_Kit_Module_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hi_Kit_Module_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D189B2E0678E7338A56EEA /* Pods_Hi_Kit_Module_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hi_Kit_Module_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA4463311B8DA40674625C76 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DA4463311B8DA40674625C76 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				4F385872A1A3BA959EC68D6F /* Pods-Hi-Kit-Module_Tests.debug.xcconfig */,
 				0E8D2AB301618AC233BEC087 /* Pods-Hi-Kit-Module_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2SRTBWK6P4;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2SRTBWK6P4;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,11 +315,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hi-Kit-Module_Example/Pods-Hi-Kit-Module_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hi-Helper-Module/Hi_Helper_Module.framework",
 				"${BUILT_PRODUCTS_DIR}/Hi-Kit-Module/Hi_Kit_Module.framework",
+				"${BUILT_PRODUCTS_DIR}/Hi-Router-Module/Hi_Router_Module.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hi_Helper_Module.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hi_Kit_Module.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hi_Router_Module.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,10 +492,11 @@
 			baseConfigurationReference = 04849B0F438A0A248814ACD6 /* Pods-Hi-Kit-Module_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2SRTBWK6P4;
 				INFOPLIST_FILE = "Hi-Kit-Module/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hsa.Hi-Kit-Module-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -493,10 +508,11 @@
 			baseConfigurationReference = 51847E3172EB3E385A6F5DEF /* Pods-Hi-Kit-Module_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2SRTBWK6P4;
 				INFOPLIST_FILE = "Hi-Kit-Module/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.hsa.Hi-Kit-Module-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -507,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F385872A1A3BA959EC68D6F /* Pods-Hi-Kit-Module_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2SRTBWK6P4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -520,7 +537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hi-Kit-Module_Example.app/Hi-Kit-Module_Example";
 			};
 			name = Debug;
@@ -529,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E8D2AB301618AC233BEC087 /* Pods-Hi-Kit-Module_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2SRTBWK6P4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -538,7 +556,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hi-Kit-Module_Example.app/Hi-Kit-Module_Example";
 			};
 			name = Release;
