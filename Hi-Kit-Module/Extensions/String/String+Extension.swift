@@ -151,10 +151,23 @@ extension String {
 }
 
 extension String {
-    public func hiNotEmptyOrNil() -> Bool {
+    
+    public func hiEmptyOrNil() -> Bool {
         if (self == nil) {
-            return false;
+            return true;
         }
-        return self.count > 0;
+        return !(self.count > 0);
+    }
+}
+
+
+
+@objc extension NSString {
+    
+    @objc public func hiEmptyOrNilForNSString() -> Bool {
+        if (self == nil) {
+            return true;
+        }
+        return !(self.length > 0);
     }
 }

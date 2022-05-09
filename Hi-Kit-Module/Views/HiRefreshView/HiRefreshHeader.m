@@ -41,24 +41,24 @@
     
     // 设置普通状态的动画图片
     NSMutableArray *downImages = [NSMutableArray array];
-    [downImages addObject:[HiOCAssetsHelper bundledImage:@"hi_mjrefresh_gif_down" withModule:@"Hi-Kit-Module"]];
+    [downImages addObject:[HiOCAssetsHelper bundledImage:@"hi_mjrefresh_gif_down" withModule:@"Hi_Kit_Module"]];
     [self setImages:downImages forState:MJRefreshStateIdle];
     
     NSMutableArray *upImages = [NSMutableArray array];
-    [upImages addObject:[HiOCAssetsHelper bundledImage:@"hi_mjrefresh_gif_up" withModule:@"Hi-Kit-Module"]];
+    [upImages addObject:[HiOCAssetsHelper bundledImage:@"hi_mjrefresh_gif_up" withModule:@"Hi_Kit_Module"]];
     [self setImages:upImages forState:MJRefreshStatePulling];
     [self setImages:upImages forState:MJRefreshStateWillRefresh];
     
     // 设置正在刷新状态的动画图片
     NSMutableArray *refreshImages = [NSMutableArray array];
     for (NSUInteger i = 1; i<=25; i++) {
-        UIImage *image = [HiOCAssetsHelper bundledImage:[NSString stringWithFormat:@"hi_mjrefresh_gif_0%zd", i] withModule:@"Hi-Kit-Module"];
+        UIImage *image = [HiOCAssetsHelper bundledImage:[NSString stringWithFormat:@"hi_mjrefresh_gif_0%zd", i] withModule:@"Hi_Kit_Module"];
         [refreshImages addObject:image];
     }
     [self setImages:refreshImages duration:0.6 forState:MJRefreshStateRefreshing];
     
     NSMutableArray *finishImages = [NSMutableArray array];
-    [finishImages addObject:[HiOCAssetsHelper bundledImage:@"hi_mjrefresh_gif_finish" withModule:@"Hi-Kit-Module"]];
+    [finishImages addObject:[HiOCAssetsHelper bundledImage:@"hi_mjrefresh_gif_finish" withModule:@"Hi_Kit_Module"]];
     [self setImages:finishImages forState:MJRefreshStateNoMoreData];
 }
 
