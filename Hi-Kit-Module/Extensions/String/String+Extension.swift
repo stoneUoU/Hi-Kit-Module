@@ -9,7 +9,6 @@
 import UIKit
 import Foundation
 import CommonCrypto
-import Hi_Helper_Module
 
 enum CryptoAlgorithm {
     case MD5, SHA1, SHA224, SHA256, SHA384, SHA512
@@ -80,17 +79,6 @@ extension String {
         return height
     }
     
-    func replacePhone() -> String {
-        if !HiRegularHelper.mobileIsValidated(vStr: self) {
-            return self;
-        }else{
-            let start = self.index(self.startIndex, offsetBy: 3)
-            let end = self.index(self.startIndex, offsetBy: 7)
-            let range = Range(uncheckedBounds: (lower: start, upper: end))
-            return self.replacingCharacters(in: range, with: "****")
-        }
-    }
-    
     public var md5: String! {
         let str = self.cString(using: String.Encoding.utf8)
         let strLen = CC_LONG(self.lengthOfBytes(using: String.Encoding.utf8))
@@ -159,6 +147,14 @@ extension String {
             hash.appendFormat("%02x", result[i])
         }
         return String(hash)
-    }
+    }    
 }
 
+extension String {
+    public func hiNotEmptyOrNil() -> Bool {
+        if (self == nil) {
+            return false;
+        }
+        return self.count > 0;
+    }
+}

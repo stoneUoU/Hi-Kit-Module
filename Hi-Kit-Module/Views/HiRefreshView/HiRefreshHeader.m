@@ -7,7 +7,8 @@
 //
 
 #import "HiRefreshHeader.h"
-#import <Hi_Helper_Module/HiOCAssetsHelper.h>
+#import "HiOCAssetsHelper.h"
+//#import <Hi_Helper_Module/HiOCAssetsHelper.h>
 
 @interface HiRefreshHeader ()
 

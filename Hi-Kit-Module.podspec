@@ -38,8 +38,8 @@ TODO: Add long description of the pod here.
   
 #  s.resources = ['Hi-Kit-Module/**/*.xib', 'Hi-Kit-Module/**/*.bundle','Hi-Kit-Module/**/*.xcassets']
   
-  s.dependency 'Hi-Router-Module'
-  s.dependency 'Hi-Helper-Module'
+  s.dependency 'Hi-Router-Module', '0.2.0'
+#  s.dependency 'Hi-Helper-Module'
   
   s.dependency 'SnapKit'
   s.dependency 'MJRefresh'

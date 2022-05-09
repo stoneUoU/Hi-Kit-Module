@@ -7,9 +7,11 @@
 //
 
 #import "HiRefreshFooter.h"
-#import <Hi_Helper_Module/HiOCAssetsHelper.h>
+#import "HiOCAssetsHelper.h"
+
 //#import "Hi_Swift_Union-Swift.h"
 //#import "Hi_Kit_Module-Swift.h"
+//#import <Hi_Helper_Module/HiOCAssetsHelper.h>
 
 @interface HiRefreshFooter()
 
