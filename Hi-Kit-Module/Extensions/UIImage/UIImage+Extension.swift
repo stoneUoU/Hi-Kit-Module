@@ -287,6 +287,17 @@ extension UIImage {
         }
         return resultImage
     }
+    
+    @objc open class func hi_color(hiColor:UIColor) -> UIImage {
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context?.setFillColor(hiColor.cgColor)
+        context?.fill(rect)
+        let theImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return theImage ?? UIImage();
+    }
 }
 
 @objc extension UIImage {
