@@ -301,7 +301,31 @@ extension UIImage {
 }
 
 @objc extension UIImage {
+    
     @objc open class func hi_image(named name: String,moduled module: String) -> UIImage {
         return HiAssetsHelper.bundledImage(named: name,moduled:module);
     }
+    
+    public class func initializeMethod(){
+        let imageNamed = class_getClassMethod(self, #selector(self.init(named:)))
+        let looha_ImageNamed = class_getClassMethod(self, Selector("looha_none_imageNamed:"))
+        if let imageNamed, let looha_ImageNamed {
+            method_exchangeImplementations(imageNamed, looha_ImageNamed)
+        }
+    }
+    
+    //  Converted to Swift 5.10 by Swiftify v5.10.33141 - https://swiftify.com/
+    class func looha_none_imageNamed(_ name: String?) -> UIImage {
+        if ((name?.isEmpty) != nil) {
+//            print("打印无图片名称=============\(name)");
+            return UIImage();
+        }
+        let image = self.looha_none_imageNamed(name)
+        if image == nil {
+//            print("打印无图片名称=============\(name)");
+            return UIImage();
+        }
+        return self.looha_none_imageNamed(name)
+    }
+    
 }

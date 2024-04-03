@@ -26,10 +26,10 @@ public extension UIButton {
             objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
-    func setImageAndTitle(imageName:String,title:String,type:ButtonImagePosition,Space space:CGFloat)  {
+    func setImageAndTitle(image:UIImage,title:String,type:ButtonImagePosition,Space space:CGFloat)  {
         
         self.setTitle(title, for: .normal)
-        self.setImage(UIImage(named:imageName), for: .normal)
+        self.setImage(image, for: .normal)
         
         let imageWith :CGFloat = (self.imageView?.frame.size.width)!;
         let imageHeight :CGFloat = (self.imageView?.frame.size.height)!;

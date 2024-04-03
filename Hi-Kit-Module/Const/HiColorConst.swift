@@ -35,6 +35,8 @@ public let HiColorView:UIColor = UIColor.color_HexStr("#f4f6f9");
 
 public let HiColorPlace:UIColor = UIColor.color_HexStr("#F7F9FD");
 
+public let HiColorFEB70F:UIColor = UIColor.color_HexStr("#FEB70F");
+
 /// 标题、正文、辅助文字颜色
 public let HiColorTitleOne:UIColor = UIColor.color_HexStr("#303133");
 public let HiColorTitleTwo:UIColor = UIColor.color_HexStr("#606266");
